@@ -1,4 +1,5 @@
 //const MongoClient = require('mongodb').MongoClient;
+
 const {MongoClient, ObjectID} = require('mongodb');
 
 
@@ -22,6 +23,7 @@ MongoClient.connect('mongodb://localhost:27017/ToDoApp', (err, db) => {
 
     //Insert new doc Users
     const mynewDb = db.db('TodoApp');
+    
     // mynewDb.collection('Users').insertOne({
     //     name: 'Hari',
     //     age: 26,
