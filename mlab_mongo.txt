@@ -1,0 +1,7 @@
+mongodb://<dbuser>:<dbpassword>@ds261247.mlab.com:61247/db_todo-api
+
+mongo ds261247.mlab.com:61247/db_todo-api -u ethan -p hunt@163
+
+heroku config:set MONGODB_URI=mongodb://ethan:hunt163@ds261247.mlab.com:61247/db_todo-api
+
+mongorestore -h ds261247.mlab.com:61247 -d db_todo-api -u ethan -p hunt C:\Users\hkonduri\mongo-data

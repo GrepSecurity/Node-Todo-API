@@ -1,3 +1,5 @@
+
+require('./config/config')
 const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -8,7 +10,7 @@ const {
 
 var {
     mongoose
-} = require('./db/mongoose')
+} = require('./db/mongoose');
 var {
     Todo
 } = require('./models/todo');
