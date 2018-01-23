@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var mla = "@ds261247.mlab.com:61247/db_todo-api";
+//var mla = "@ds261247.mlab.com:61247/db_todo-api";
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI);
 // var username = process.env.DB_USERNAME;
