@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server/server.js",
     "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js",
-    "test-watch": "nodemon --exec \"npm test\""
+    "test-watch": "nodemon --exec \"npm test\"",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": "8.9.3"
@@ -19,12 +21,14 @@
     "loadash": "^1.0.0",
     "lodash": "^4.17.4",
     "mongodb": "^3.0.1",
-    "mongoose": "^4.13.9"
+    "mongoose": "^4.13.9",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "expect": "^1.20.2",
     "mocha": "^4.1.0",
     "nodemon": "^1.14.11",
     "supertest": "^3.0.0"
-  }
+  },
+  "snyk": true
 }
